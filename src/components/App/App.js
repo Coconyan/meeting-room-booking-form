@@ -1,9 +1,10 @@
+import MeetingRoomForm from '../meeting-room-form/meetingRoomForm';
 import './styles/App.scss';
 
 function App() {
   return (
     <div className="app">
-      <h1>Hi!!</h1>
+      <MeetingRoomForm />
     </div>
   );
 }
