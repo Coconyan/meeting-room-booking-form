@@ -1,7 +1,16 @@
 import dayjs from 'dayjs';
-import { FLOORS_COUNT, FROORS_START_FROM, MIN_DEFAULT_TIME, ROOMS_COUNT } from '../../const';
+import {
+  FLOORS_COUNT,
+  FROORS_START_FROM,
+  MAX_DEFAULT_TIME,
+  MIN_DEFAULT_TIME,
+  ROOMS_COUNT
+} from '../../const';
 import './styles/meeting-room-form.scss';
-import { useEffect, useState } from 'react';
+import {
+  useEffect,
+  useState
+} from 'react';
 
 function MeetingRoomForm(props) {
   const {
@@ -130,7 +139,7 @@ function MeetingRoomForm(props) {
             name="meeting-time-end"
             value={timeEnd}
             min={timeStart}
-            max={"23:00"}
+            max={MAX_DEFAULT_TIME}
             onChange={(e) => setTimeEnd(e.target.value)}
             required
           />
